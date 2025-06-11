@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:oop_flutter/models/XeCar.dart';
 import 'package:oop_flutter/models/hoc_sinh.dart';
 
-void main() {
-  var hocSinhNew = HocSinh("Quinton Nguyen", "Golden Owl", 9, 9, 8);
-  hocSinhNew.inThongTin();
-  print("Diem trung binh: ${hocSinhNew.tinhDienTrungBinh()}" + "Xep loai: ${hocSinhNew.xepLoai()}");
+import 'models/lop_con.dart';
 
+void main() {
+  // var lopCon = LopCon();
+  // lopCon.sendMessage();
+  var xe = XeCar();
+  xe.chay();
+  xe.dungLai();
+  xe.co4Banh();
 }
 
 class MyApp extends StatelessWidget {

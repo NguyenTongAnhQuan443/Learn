@@ -9,6 +9,13 @@ class HocSinh {
   HocSinh(this.hoVaTen, this.lop, this.diemToan, this.diemVan, this.diemAnh)
     : _ngaySinh = "chua cap nhap";
 
+
+  set ngaySinh(String value) {
+    _ngaySinh = value;
+  }
+
+  String get ngaySinh => _ngaySinh;
+
   void inThongTin() {
     print(
       "ho va ten ${this.hoVaTen}" +
@@ -42,9 +49,5 @@ class HocSinh {
     }
   }
 
-  set ngaySinh(String value) {
-    _ngaySinh = value;
-  }
 
-  String get ngaySinh => _ngaySinh;
 }
