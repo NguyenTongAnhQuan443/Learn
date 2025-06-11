@@ -15,4 +15,8 @@ class XeCar extends Xe{
   void co4Banh() {
     print("Xe Car có 4 bánh");
   }
+
+  void sendMessage() {
+    print("Xe Car gửi tin nhắn");
+  }
 }
